@@ -15,7 +15,7 @@ WebUI.navigateToUrl(GlobalVariable.application_domain + '/cart.html')
 
 'step 2: Add visual checkpoint at Page cart html'
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC4-Verify Successful Navigation to Cart Page_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC4-Verify Page Display for Shopping Cart_visual_checkpoint')
 
 'Terminate test session: Close browser'
 
