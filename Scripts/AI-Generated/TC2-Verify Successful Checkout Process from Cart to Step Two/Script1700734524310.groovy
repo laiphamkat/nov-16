@@ -1,7 +1,7 @@
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.model.FailureHandling
-import internal.GlobalVariable as GlobalVariable
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.model.FailureHandling
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 'Initialize test session: Open browser and set view port'
 
@@ -63,7 +63,21 @@ WebUI.submit(testObj)
 
 WebUI.delay(15)
 
-'step 3: At Page inventory html click on hyperlink object --> navigate to Page cart html'
+'step 3: At Page inventory html click on button add to cart sauce labs backpack'
+
+testObj = findTestObject('Object Repository/Page_inventory_html/button_add_to_cart_sauce_labs_backpack')
+
+WebUI.delay(3)
+
+WebUI.takeScreenshot()
+
+WebUI.verifyElementPresent(testObj, 20, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyMatch(WebUI.getUrl(), '.*/inventory.html(?:#.*)?(?:\\?.*)?$', true)
+
+WebUI.enhancedClick(testObj)
+
+'step 4: At Page inventory html click on hyperlink object --> navigate to Page cart html'
 
 testObj = findTestObject('Object Repository/Page_inventory_html/hyperlink_object')
 
@@ -77,7 +91,7 @@ WebUI.verifyMatch(WebUI.getUrl(), '.*/inventory.html(?:#.*)?(?:\\?.*)?$', true)
 
 WebUI.enhancedClick(testObj)
 
-'step 4: At Page cart html click on button checkout --> navigate to Page checkout-step-one html'
+'step 5: At Page cart html click on button checkout --> navigate to Page checkout-step-one html'
 
 testObj = findTestObject('Object Repository/Page_cart_html/button_checkout')
 
@@ -91,7 +105,7 @@ WebUI.verifyMatch(WebUI.getUrl(), '.*/cart.html(?:#.*)?(?:\\?.*)?$', true)
 
 WebUI.enhancedClick(testObj)
 
-'step 5: At Page checkout-step-one html input on input first name'
+'step 6: At Page checkout-step-one html input on input first name'
 
 testObj = findTestObject('Object Repository/Page_checkout-step-one_html/input_first_name')
 
@@ -105,7 +119,7 @@ WebUI.verifyMatch(WebUI.getUrl(), '.*/checkout-step-one.html(?:#.*)?(?:\\?.*)?$'
 
 WebUI.setText(testObj, var_1_input_first_name)
 
-'step 6: At Page checkout-step-one html input on input last name'
+'step 7: At Page checkout-step-one html input on input last name'
 
 testObj = findTestObject('Object Repository/Page_checkout-step-one_html/input_last_name')
 
@@ -119,7 +133,7 @@ WebUI.verifyMatch(WebUI.getUrl(), '.*/checkout-step-one.html(?:#.*)?(?:\\?.*)?$'
 
 WebUI.setText(testObj, var_2_input_last_name)
 
-'step 7: At Page checkout-step-one html input on input postal code'
+'step 8: At Page checkout-step-one html input on input postal code'
 
 testObj = findTestObject('Object Repository/Page_checkout-step-one_html/input_postal_code')
 
@@ -133,7 +147,7 @@ WebUI.verifyMatch(WebUI.getUrl(), '.*/checkout-step-one.html(?:#.*)?(?:\\?.*)?$'
 
 WebUI.setText(testObj, var_3_input_postal_code)
 
-'step 8: At Page checkout-step-one html click on input continue --> navigate to Page checkout-step-two html'
+'step 9: At Page checkout-step-one html click on input continue --> navigate to Page checkout-step-two html'
 
 testObj = findTestObject('Object Repository/Page_checkout-step-one_html/input_continue')
 
@@ -147,9 +161,9 @@ WebUI.verifyMatch(WebUI.getUrl(), '.*/checkout-step-one.html(?:#.*)?(?:\\?.*)?$'
 
 WebUI.enhancedClick(testObj)
 
-'step 9: Add visual checkpoint at Page checkout-step-two html'
+'step 10: Add visual checkpoint at Page checkout-step-two html'
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Successful Checkout Process from Home Page to Checkout Step Two_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC2-Verify Successful Checkout Process from Cart to Step Two_visual_checkpoint')
 
 'Terminate test session: Close browser'
 

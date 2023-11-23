@@ -1,12 +1,21 @@
 Flow ID,Description,Test Steps,Flow Priority
-1,Verify Successful Checkout Process from Home Page to Checkout Step Two,"step 1: Navigate to Page home
+2,Verify Successful Checkout Process from Cart to Step Two,"step 1: Navigate to Page home
 step 2: Login at Page home --> navigate to Page inventory html
-step 3: At Page inventory html click on hyperlink object --> navigate to Page cart html
-step 4: At Page cart html click on button checkout --> navigate to Page checkout-step-one html
-step 5: At Page checkout-step-one html input on input first name
-step 6: At Page checkout-step-one html input on input last name
-step 7: At Page checkout-step-one html input on input postal code
-step 8: At Page checkout-step-one html click on input continue --> navigate to Page checkout-step-two html
-step 9: Add visual checkpoint at Page checkout-step-two html",High
-2,Verify Checkout Completion Page Displayed,"step 1: Navigate to Page checkout-complete html
-step 2: Add visual checkpoint at Page checkout-complete html",Trivial
+step 3: At Page inventory html click on button add to cart sauce labs backpack
+step 4: At Page inventory html click on hyperlink object --> navigate to Page cart html
+step 5: At Page cart html click on button checkout --> navigate to Page checkout-step-one html
+step 6: At Page checkout-step-one html input on input first name
+step 7: At Page checkout-step-one html input on input last name
+step 8: At Page checkout-step-one html input on input postal code
+step 9: At Page checkout-step-one html click on input continue --> navigate to Page checkout-step-two html
+step 10: Add visual checkpoint at Page checkout-step-two html",High
+1,Verify Successful Addition and Removal of Items from Inventory,"step 1: Navigate to Page home
+step 2: Login at Page home --> navigate to Page inventory html
+step 3: At Page inventory html click on button add to cart sauce labs backpack
+step 4: At Page inventory html click on hyperlink item 0 title link --> navigate to Page inventory-item html
+step 5: At Page inventory-item html click on button remove sauce labs bike light
+step 6: Add visual checkpoint at Page inventory-item html",High
+3,Verify Successful Navigation to Checkout Step Two Page,"step 1: Navigate to Page checkout-step-two html
+step 2: Add visual checkpoint at Page checkout-step-two html",Trivial
+4,Verify Successful Navigation to Cart Page,"step 1: Navigate to Page cart html
+step 2: Add visual checkpoint at Page cart html",Trivial
