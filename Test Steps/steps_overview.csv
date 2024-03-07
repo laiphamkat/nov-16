@@ -1,5 +1,5 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Verify Successful Checkout Process for Multiple Items,Navigate to the home page and login to access the inventory. Add multiple items to the cart and proceed to checkout. Verify the checkout process at step one.,"step 1: Navigate to https://www.saucedemo.com/
+1,Verify Successful Checkout Process for Multiple Items,Navigate to the home page and login to access the inventory. Add multiple items to the cart and proceed to checkout. Verify the checkout process at the first step.,"step 1: Navigate to https://www.saucedemo.com/
 step 2: Click on div 'login credentials'
 step 3: Login -> Navigate to page 'inventory.html'
 step 4: Click on button 'add-to-cart-sauce-labs-backpack'
