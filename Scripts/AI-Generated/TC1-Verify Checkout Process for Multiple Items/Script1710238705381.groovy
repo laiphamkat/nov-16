@@ -1,8 +1,8 @@
 import katalon.truetest.TrueTestScripts
-import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.model.FailureHandling
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import internal.GlobalVariable as GlobalVariable
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 
 'Initialize test session: Open browser and set view port'
 
@@ -74,7 +74,7 @@ WebUI.enhancedClick(findTestObject('Page_cart_html/button_checkout'))
 
 "Step 8: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Successful Checkout Process for Multiple Items_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Checkout Process for Multiple Items_visual_checkpoint')
 
 'Terminate test session: Close browser'
 
