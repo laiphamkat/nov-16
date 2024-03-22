@@ -1,5 +1,5 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Verify Checkout Process at Page Inventory Html,Navigate to the home page and login. Add an item to the cart and proceed to checkout. Verify the checkout process at Step One.,"step 1: Navigate to https://www.saucedemo.com/
+1,Verify Checkout Process for Sauce Labs Backpack,Navigate to the home page and login to access the inventory. Add the Sauce Labs Backpack to the cart and proceed to checkout. Verify the checkout step one page.,"step 1: Navigate to https://www.saucedemo.com/
 step 2: Login -> Navigate to page 'inventory.html'
 step 3: Click on link 'item 4 title link' -> Navigate to page 'inventory-item.html'
 step 4: Click on button 'add-to-cart-sauce-labs-backpack'
