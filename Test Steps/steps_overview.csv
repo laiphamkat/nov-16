@@ -1,8 +1,19 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Verify Checkout Process for Sauce Labs Backpack,Navigate to the home page and login to access the inventory. Add the Sauce Labs Backpack to the cart and proceed to checkout. Verify the checkout step one page.,"step 1: Navigate to https://www.saucedemo.com/
-step 2: Login -> Navigate to page 'inventory.html'
-step 3: Click on link 'item 4 title link' -> Navigate to page 'inventory-item.html'
-step 4: Click on button 'add-to-cart-sauce-labs-backpack'
-step 5: Click on link '1' -> Navigate to page 'cart.html'
-step 6: Click on button 'checkout' -> Navigate to page 'checkout-step-one.html'
-step 7: Take full page screenshot as checkpoint",Trivial
+2,Verify Successful Checkout Process for Sauce Labs Backpack,Navigate to the home page and login. Add the Sauce Labs Backpack to the cart and proceed to checkout. Verify the checkout step one page for successful processing.,"Step 1: Navigate to https://www.saucedemo.com/
+Step 2: Login
+Step 3: Click on div
+Step 4: Login -> Navigate to page 'inventory.html'
+Step 5: Click on link 'item 4 title link' -> Navigate to page 'inventory-item.html'
+Step 6: Click on button 'add-to-cart-sauce-labs-backpack'
+Step 7: Click on link '1' -> Navigate to page 'cart.html'
+Step 8: Click on button 'checkout' -> Navigate to page 'checkout-step-one.html'
+Step 9: Take full page screenshot as checkpoint
+",High
+1,Verify Successful Checkout Process for Sauce Labs Backpack,Navigate to the home page and login. Add the Sauce Labs Backpack to the cart and proceed to checkout. Verify the checkout step one page for successful processing.,"Step 1: Navigate to https://www.saucedemo.com/
+Step 2: Login -> Navigate to page 'inventory.html'
+Step 3: Click on link 'item 4 title link' -> Navigate to page 'inventory-item.html'
+Step 4: Click on button 'add-to-cart-sauce-labs-backpack'
+Step 5: Click on link '1' -> Navigate to page 'cart.html'
+Step 6: Click on button 'checkout' -> Navigate to page 'checkout-step-one.html'
+Step 7: Take full page screenshot as checkpoint
+",Trivial

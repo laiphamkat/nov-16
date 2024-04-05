@@ -1,7 +1,7 @@
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.model.FailureHandling
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.model.FailureHandling
 import katalon.truetest.TrueTestScripts
 
 'Initialize test session: Open browser and set view port'
@@ -36,11 +36,11 @@ WebUI.enhancedClick(findTestObject('AI-Generated/Page_inventory_html/hyperlink_i
 
 WebUI.takeScreenshot()
 
-WebUI.verifyElementPresent(findTestObject('AI-Generated/Page_inventory_item_html/button_add_to_cart_sauce_labs_backpack'), 20, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(findTestObject('AI-Generated/Page_inventory_item_html/button_add-to-cart-sauce-labs-backpack'), 20, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyMatch(WebUI.getUrl(), GlobalVariable.application_domain + '/inventory-item.html?/?(?:#.*)?(?:\\?.*)?$', true)
 
-WebUI.enhancedClick(findTestObject('AI-Generated/Page_inventory_item_html/button_add_to_cart_sauce_labs_backpack'))
+WebUI.enhancedClick(findTestObject('AI-Generated/Page_inventory_item_html/button_add-to-cart-sauce-labs-backpack'))
 
 "Step 5: Click on link '1' -> Navigate to page 'cart.html'"
 
@@ -64,7 +64,7 @@ WebUI.enhancedClick(findTestObject('Page_cart_html/button_checkout'))
 
 "Step 7: Take full page screenshot as checkpoint"
 
-WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Checkout Process for Sauce Labs Backpack_visual_checkpoint')
+WebUI.takeFullPageScreenshotAsCheckpoint('TC1-Verify Successful Checkout Process for Sauce Labs Backpack_visual_checkpoint')
 
 'Terminate test session: Close browser'
 

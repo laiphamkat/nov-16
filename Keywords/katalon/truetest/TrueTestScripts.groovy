@@ -14,11 +14,9 @@ public class TrueTestScripts {
             // import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
             // import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
             // WebUI.callTestCase(findTestCase('<path to testcase>/Login'), [:], FailureHandling.CONTINUE_ON_FAILURE)
-            
             // Trigger a custom Login method
             call your custom login method
             Login.login()
-            
             // Trigger a custom Login keyword
             // CustomKeywords.login()
         } catch(Exception e) {
