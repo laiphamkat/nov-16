@@ -1,11 +1,11 @@
 package katalon.truetest
 
-import your.package
-import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import internal.GlobalVariable
-import authentication.Login
-import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.exception.WebElementNotFoundException
+import authentication.Login
+import your.package
 
 public class TrueTestScripts {
     public static void login() {
