@@ -1,12 +1,13 @@
 package katalon.truetest
 
 import com.kms.katalon.core.util.KeywordUtil
+import authentication.Login
+import internal.GlobalVariable
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 import your.package
-import authentication.Login
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 public class TrueTestScripts {
-    
     public static void login() {
         try {
             // Trigger a Login test case
@@ -28,6 +29,21 @@ public class TrueTestScripts {
             }
         }
     }
+    
+    public static void navigate(String path) {
+        String applicationDomain = GlobalVariable.application_domain;
+        String queryParameters = GlobalVariable.query_params;
+        if (path == null) {
+            path = "";
+        }
+        if (!path.startsWith("/")) {
+            path = "/$path";
+        }
+        String url = "$applicationDomain$path";
+        if (queryParameters.length() > 0) {
+            url = "$url?$queryParameters";
+        }
+        WebUI.navigateToUrl(url);
+    }
 }
-
 
