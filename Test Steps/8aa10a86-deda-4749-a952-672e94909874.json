@@ -1,0 +1,16 @@
+{
+    "steps": [
+        "step 1: Navigate to https://www.saucedemo.com/",
+        "step 2: Login -> Navigate to page 'inventory.html'",
+        "step 3: Click on button 'add-to-cart-sauce-labs-bike-light'",
+        "step 4: Click on link '2' -> Navigate to page 'checkout-step-one.html'",
+        "step 5: Click on input field 'firstName'",
+        "step 6: Enter input value in input field 'firstName'",
+        "step 7: Click on input field 'lastName'",
+        "step 8: Enter input value in input field 'lastName'",
+        "step 9: Click on input field 'postalCode'",
+        "step 10: Enter input value in input field 'postalCode'",
+        "step 11: Click on input field 'continue' -> Navigate to page 'checkout-step-two.html'",
+        "step 12: Take full page screenshot as checkpoint"
+    ]
+}

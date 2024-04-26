@@ -1,5 +1,5 @@
 Flow ID,Name,Description,Test Steps,Flow Priority
-1,Verify Checkout Process for Sauce Labs Backpack,Navigate to the home page and login to access the inventory. Add the Sauce Labs Backpack to the cart and proceed to checkout. Verify the checkout process at Step One.,"Step 1: Navigate to https://www.saucedemo.com/
+1,Verify Successful Checkout Process with Sauce Labs Backpack,Navigate to the home page and login to access the inventory. Add the Sauce Labs Backpack to the cart and proceed to checkout. Verify the checkout process at Step One.,"Step 1: Navigate to https://www.saucedemo.com/
 Step 2: Login -> Navigate to page 'inventory.html'
 Step 3: Click on link 'item 4 title link' -> Navigate to page 'inventory-item.html'
 Step 4: Click on button 'add-to-cart-sauce-labs-backpack'
@@ -7,7 +7,7 @@ Step 5: Click on link '1' -> Navigate to page 'cart.html'
 Step 6: Click on button 'checkout' -> Navigate to page 'checkout-step-one.html'
 Step 7: Take full page screenshot as checkpoint
 ",High
-2,Verify Checkout Process for Sauce Labs Bike Light,Navigate to the home page and login to access the inventory. Add the Sauce Labs Bike Light to the cart and proceed to checkout. Enter the required information and complete the checkout process at Step Two.,"Step 1: Navigate to https://www.saucedemo.com/
+2,Verify Successful Checkout Process with Sauce Labs Bike Light,Navigate to the home page and login to access the inventory. Add the Sauce Labs Bike Light to the cart and proceed to checkout. Enter the required information and complete the checkout process at Step Two.,"Step 1: Navigate to https://www.saucedemo.com/
 Step 2: Login -> Navigate to page 'inventory.html'
 Step 3: Click on button 'add-to-cart-sauce-labs-bike-light'
 Step 4: Click on link '2' -> Navigate to page 'checkout-step-one.html'
